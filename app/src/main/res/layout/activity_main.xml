@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:background="@drawable/colors"
+
+
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/titlef"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="0dp"
+        android:text="Trending Repos"
+        android:layout_margin="30dp"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="9pt" />
+
+    <LinearLayout
+        android:id="@+id/btnlayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:layout_below="@id/titlef">
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:id="@+id/back_btn"
+            android:text="Back"/>
+        <Button
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="30dp"
+            android:id="@+id/next_btn"
+            android:text="Next"/>
+
+
+    </LinearLayout>
+    <ListView
+    android:elevation="50dp"
+    android:background="@drawable/cololist"
+    android:id="@+id/list_repos"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@id/btnlayout"/>
+
+
+</RelativeLayout>
